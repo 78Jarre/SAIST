@@ -77,4 +77,4 @@ python -u main.py --mode infer --dataset nudt --weights runs/nudt/best_val.pt --
 python -u main.py --mode infer --dataset irstd1k --weights runs/irstd1k/best_val.pt --data-root "$DATA_ROOT/IRSTD-1k" --split-dir "$SPLIT_ROOT/IRSTD-1k" --split test --clip-checkpoint pretrained_checkpoint/ViT-B-32.pt
 ```
 
-输出为 IoU、Pd 和 Fa（×10⁻⁶）。评估验证集时，将 `--split test` 改为 `--split val`。
+
