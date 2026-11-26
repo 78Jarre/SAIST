@@ -61,19 +61,19 @@ The following commands use the checkpoints downloaded from Hugging Face to evalu
 **NUAA-SIRST**
 
 ```bash
-python -u main.py --mode infer --dataset nuaa --weights model_pt/NUAA_best_val.pt --data-root "$DATA_ROOT/NUAA-SIRST" --split-dir "$SPLIT_ROOT/NUAA" --split test --clip-checkpoint pretrained_checkpoint/ViT-B-32.pt
+python -u main.py --mode infer --dataset nuaa --weights model_pt/NUAA_best_val.pt --data-root "$DATA_ROOT/MIRSTD/NUAA-SIRST" --split-dir "$SPLIT_ROOT/NUAA" --split test --clip-checkpoint pretrained_checkpoint/ViT-B-32.pt
 ```
 
 **NUDT-SIRST**
 
 ```bash
-python -u main.py --mode infer --dataset nudt --weights model_pt/NUDT_best_val.pt --data-root "$DATA_ROOT/NUDT-SIRST" --split-dir "$SPLIT_ROOT/NUDT" --split test --clip-checkpoint pretrained_checkpoint/ViT-B-32.pt
+python -u main.py --mode infer --dataset nudt --weights model_pt/NUDT_best_val.pt --data-root "$DATA_ROOT/MIRSTD/NUDT-SIRST" --split-dir "$SPLIT_ROOT/NUDT" --split test --clip-checkpoint pretrained_checkpoint/ViT-B-32.pt
 ```
 
 **IRSTD-1k**
 
 ```bash
-python -u main.py --mode infer --dataset irstd1k --weights model_pt/IRSTD1k_best_val.pt --data-root "$DATA_ROOT/IRSTD-1k" --split-dir "$SPLIT_ROOT/IRSTD-1k" --split test --clip-checkpoint pretrained_checkpoint/ViT-B-32.pt
+python -u main.py --mode infer --dataset irstd1k --weights model_pt/IRSTD1k_best_val.pt --data-root "$DATA_ROOT/MIRSTD/IRSTD-1k" --split-dir "$SPLIT_ROOT/IRSTD-1k" --split test --clip-checkpoint pretrained_checkpoint/ViT-B-32.pt
 ```
 
 The reported metrics are IoU, Pd, and Fa (×10⁻⁶).
